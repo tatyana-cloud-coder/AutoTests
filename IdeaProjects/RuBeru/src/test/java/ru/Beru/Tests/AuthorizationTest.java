@@ -4,6 +4,8 @@ import com.sun.org.glassfish.gmbal.Description;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
 import ru.Beru.Pages.HomePage;
+import ru.Beru.Pages.LoginPage;
+import ru.Beru.Pages.PasswordPage;
 import ru.Beru.Settings.WebDriverSettings;
 
 public class AuthorizationTest extends WebDriverSettings {
@@ -12,16 +14,14 @@ public class AuthorizationTest extends WebDriverSettings {
     @Test
     @Description("Проверка корректности авторизации на сайте интернет-магазина")
     public void authorization () {
-       HomePage homepage = new HomePage(chromeDriver);
-       homepage.OpenShop();
-       homepage.checkTextProfileButton("Войти в аккаунт");
-       homepage.doAuthorization();
-
-
-
-
-
-
+       HomePage homePage = new HomePage(chromeDriver);
+       homePage.OpenShop();
+       homePage.checkTextProfileButton("Войти в аккаунт");
+       homePage.doAuthorization();
+       LoginPage loginPage = new LoginPage(chromeDriver);
+       loginPage.fillLogin();
+       PasswordPage passwordPage = new PasswordPage(chromeDriver);
+       passwordPage.fillPassword();
+       homePage.checkTextProfileButton("Мой профиль");
     }
-
 }
