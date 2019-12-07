@@ -9,15 +9,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
     WebDriver driver;
     private WebElement FieldForLogin;
+    private WebDriverWait wait;
     private String login = "bala5howatatwork@yandex.ru";
+
     public LoginPage (WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, 10000);
     }
     public void fillLogin() {
         FieldForLogin = driver.findElement(By.id("passp-field-login"));
         FieldForLogin.sendKeys(login);
         FieldForLogin.submit();
-        WebDriverWait wait = new WebDriverWait(driver, 10000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("passp-field-passwd")));
     }
 }

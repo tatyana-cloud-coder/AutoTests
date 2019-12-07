@@ -9,17 +9,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class PasswordPage {
     WebDriver driver;
     private WebElement FieldForPassword;
-    private String password = "TatyanaEvgenij";
+    private String password = "Tatyana2018";
+    private WebDriverWait wait;
     public PasswordPage (WebDriver driver) {
         this.driver =  driver;
+        wait = new WebDriverWait(driver, 10000);
     }
     public void fillPassword () {
         FieldForPassword = driver.findElement(By.id("passp-field-passwd"));
         FieldForPassword.sendKeys(password);
         FieldForPassword.submit();
-        WebDriverWait wait = new WebDriverWait(driver, 10000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("mvd1wAJzjc")));
-
     }
-
 }
