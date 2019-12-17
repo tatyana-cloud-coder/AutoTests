@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 13, Time elapsed: 2.268 sec <<< FAILURE! - in TestSuite
+start(ru.Beru.Tests.AuthorizationTest)  Time elapsed: 1.986 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Kirill\Documents\AutoTests\.\main\resources\drivers\chromedriver78.exe
+
+start(ru.Beru.Tests.BuyToothbrushesTest)  Time elapsed: 2.008 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Kirill\Documents\AutoTests\.\main\resources\drivers\chromedriver78.exe
+
+start(ru.Beru.Tests.ChangeCityTest)  Time elapsed: 2.03 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Kirill\Documents\AutoTests\.\main\resources\drivers\chromedriver78.exe
+

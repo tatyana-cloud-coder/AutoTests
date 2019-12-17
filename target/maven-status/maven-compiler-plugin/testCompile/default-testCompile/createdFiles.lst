@@ -1,0 +1,13 @@
+ru\Beru\Pages\ElectricalToothbrushesPage$1.class
+ru\Beru\Settings\WebDriverSettings.class
+ru\Beru\Tests\BuyToothbrushesTest.class
+ru\Beru\Pages\ElectricalToothbrushesPage.class
+ru\Beru\Tests\ChangeCityTest$ProviderCities.class
+ru\Beru\Settings\SeleniumListener.class
+ru\Beru\Tests\ChangeCityTest.class
+ru\Beru\Pages\AuthPage.class
+ru\Beru\Pages\BuyPage.class
+ru\Beru\Pages\SettingsPage.class
+ru\Beru\Tests\AuthorizationTest.class
+ru\Beru\Pages\BasketPage.class
+ru\Beru\Pages\HomePage.class

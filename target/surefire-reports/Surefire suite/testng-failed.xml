@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="ru.Beru.Tests.BuyToothbrushesTest">
+        <methods>
+          <include name="start"/>
+          <include name="catchFailure"/>
+          <include name="buyToothBrushes"/>
+          <include name="finish"/>
+        </methods>
+      </class> <!-- ru.Beru.Tests.BuyToothbrushesTest -->
+      <class name="ru.Beru.Tests.ChangeCityTest">
+        <methods>
+          <include name="start"/>
+          <include name="catchFailure"/>
+          <include name="changeCity"/>
+          <include name="finish"/>
+        </methods>
+      </class> <!-- ru.Beru.Tests.ChangeCityTest -->
+      <class name="ru.Beru.Tests.AuthorizationTest">
+        <methods>
+          <include name="authorization"/>
+          <include name="start"/>
+          <include name="catchFailure"/>
+          <include name="finish"/>
+        </methods>
+      </class> <!-- ru.Beru.Tests.AuthorizationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
